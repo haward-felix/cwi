@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Community Wellness Initiative</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- Navbar Section -->
+<nav class="navbar">
+    <div class="container">
+        <div class="logo">
+            <a href="#"><img src="images/logo_white.png" alt="CWI Logo"></a>
+        </div>
+        <div class="nav-links-container">
+            <ul class="nav-links">
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="success.html">Success Stories</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="volunteer.html">Get Involved</a></li>
+                <li><a href="https://share.hsforms.com/1GBjZ6eliRD6BtT3MzAt5qw419xu">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container">
+            <h1>Empowering Communities, Changing Lives</h1>
+            <p>Promoting health, education, and sustainable development in underserved communities</p>
+            <div class="cta-buttons">
+                <a href="https://flutterwave.com/donate/sw7rrliapylq" class="btn primary-btn" target="_blank">Donate</a>
+                <a href="volunteer.html" class="btn secondary-btn">Volunteer</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Community Wellness Initiative (CWI) is dedicated to empowering communities by providing 
+               health services, education support, and promoting sustainable development. Our mission 
+               is to uplift underserved communities and create lasting positive change.
+            </p>
+        </div>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2>Our Projects</h2>
+            <div class="project-cards">
+                <div class="card">
+                    <img src="images/dirty_water.JPG" alt="Health Services">
+                    <h3>Amazzi Project</h3>
+                    <p>Providing essential healthcare to communities in need.</p>
+                    <a href="amazzi.html" class="btn card-btn">Read More</a>
+                </div>
+                <div class="card">
+                    <img src="images/planting.JPG" alt="Education Support">
+                    <h3>Financial Freedom Project</h3>
+                    <p>Empowering the next generation through education initiatives.</p>
+                    <a href="financial_freedom.html" class="btn card-btn">Read More</a>
+                </div>
+                <div class="card">
+                    <img src="images/jackfruit.JPG" alt="Sustainable Development">
+                    <h3>Eco-tourism Project</h3>
+                    <p>Creating sustainable solutions for long-term growth.</p>
+                    <a href="eco_tourism.html" class="btn card-btn">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials-section">
+        <div class="container">
+            <h2>Community Impact Stories</h2>
+            <div class="testimonials-cards">
+                <div class="card">
+                    <p>"Thanks to CWI, our village now has access to clean water!"</p>
+                    <p><strong>- John Doe, Beneficiary</strong></p>
+                </div>
+                <div class="card">
+                    <p>"Volunteering with CWI has been life-changing."</p>
+                    <p><strong>- Jane Smith, Volunteer</strong></p>
+                </div>
+                <div class="card">
+                    <p>"CWI's education support helped me complete my studies."</p>
+                    <p><strong>- David Okello, Student</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section id="cta" class="cta-section">
+        <div class="container">
+            <h2>Get Involved</h2>
+            <div class="cta-cards">
+                <div class="card">
+                    <h3>Donate</h3>
+                    <p>Help us reach more communities in need by donating today.</p>
+                    <a href="https://flutterwave.com/donate/sw7rrliapylq" class="btn card-btn">Donate</a>
+                </div>
+                <div class="card">
+                    <h3>Volunteer</h3>
+                    <p>Join our team of dedicated volunteers and make a difference.</p>
+                    <a href="volunteer.html" class="btn card-btn">Volunteer</a>
+                </div>
+                <div class="card">
+                    <h3>Partner with Us</h3>
+                    <p>Collaborate with us to create lasting impact.</p>
+                    <button id="partner-btn" class="btn partner-btn">Partner with Us</button>
+
+                    <!-- Partner Popup Modal -->
+                    <div class="popup-overlay" id="partner-popup">
+                        <div class="popup-content">
+                            <span class="close-btn">&times;</span>
+                            <h2>Partner with Us</h2>
+                            <form action="#" class="partner-form">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required>
+
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+
+                                <label for="organization">Organization</label>
+                                <input type="text" id="organization" name="organization" required>
+
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="4" required></textarea>
+
+                                <button type="submit" class="btn submit-btn">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Download Button and Popup -->
+<div class="newsletter-download">
+    <button class="download-newsletter-btn">Download Newsletters</button>
+</div>
+
+<!-- Popup for Newsletter Download -->
+<div class="popup-overlay" id="popup-overlay">
+    <div class="popup-content">
+        <span class="close-btn">&times;</span>
+        <h2>Download Newsletters</h2>
+        <div class="newsletter-year">
+            <h3>2023 Newsletters</h3>
+            <ul>
+                <li><a href="#" download>January 2025</a></li>
+                <li><a href="#" download>February 2025</a></li>
+                <li><a href="#" download>March 2025</a></li>
+                <!-- Add more months here -->
+            </ul>
+        </div>
+        <div class="newsletter-year">
+            <h3>2022 Newsletters</h3>
+            <ul>
+                <li><a href="#" download>January 2024</a></li>
+                <li><a href="#" download>February 2024</a></li>
+                <li><a href="#" download>March 2024</a></li>
+                <!-- Add more months here -->
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- Newsletter Subscription Section -->
+<section id="newsletter" class="newsletter-section">
+    <div class="container">
+        <h2>Stay Updated with our newsletters</h2>
+        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+<script>
+  hbspt.forms.create({
+    portalId: "6778002",
+    formId: "790c2f15-7f27-4bae-ab09-2ae78460a748"
+  });
+</script>
+    </div>
+</section>
+
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="projects.html">Projects</a>
+                <a href="#">Contact Us</a>
+            </div>
+            <div class="footer-contact">
+                <p>Contact Us: info@communitywellness.org | +256 123 4567</p>
+            </div>
+            <p>&copy; 2024 Community Wellness Initiative. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+    <script>
+        const downloadBtn = document.querySelector('.download-newsletter-btn');
+        const popupOverlay = document.getElementById('popup-overlay');
+        const closeBtn = document.querySelector('.close-btn');
+        // Show Popup
+        downloadBtn.addEventListener('click', () => {
+            popupOverlay.style.display = 'flex';
+        });
+    
+        // Hide Popup when clicking close button
+        closeBtn.addEventListener('click', () => {
+            popupOverlay.style.display = 'none';
+        });
+    
+        // Hide Popup when clicking outside the content area
+        window.addEventListener('click', (e) => {
+            if (e.target == popupOverlay) {
+                popupOverlay.style.display = 'none';
+            }
+        });
+    </script>
+    <script>
+        // Get the partner modal element
+const partnerModal = document.getElementById('partner-popup');
+
+// Get the Partner button that opens the modal
+const partnerBtn = document.getElementById('partner-btn');
+
+// Get the close button for the modal
+const partnerCloseBtn = document.querySelector('.close-btn');
+
+// Show Partner modal when clicking the Partner button
+partnerBtn.addEventListener('click', () => {
+    partnerModal.style.display = 'flex';
+});
+
+// Hide Partner modal when clicking the close button
+partnerCloseBtn.addEventListener('click', () => {
+    partnerModal.style.display = 'none';
+});
+
+// Hide Partner modal when clicking outside the modal content
+window.addEventListener('click', (e) => {
+    if (e.target === partnerModal) {
+        partnerModal.style.display = 'none';
+    }
+});
+
+    </script>
+</body>
+</html>

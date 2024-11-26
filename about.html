@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About Us - Community Wellness Initiative (CWI)</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar Section -->
+<nav class="navbar">
+    <div class="container">
+        <div class="logo">
+            <a href="index.html"><img src="images/logo_white.png" alt="CWI Logo"></a>
+        </div>
+        <div class="nav-links-container">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="success.html">Success Stories</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="volunteer.html">Get Involved</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+    </div>
+</nav>
+    <!-- About Us Section -->
+    <section class="about-us">
+        <div class="container">
+            <h1>About Us</h1>
+            <p>Welcome to the Community Wellness Initiative (CWI), where we strive to improve the quality of life in our communities through health services, education, and sustainable development initiatives.</p>
+
+            <!-- Mission, Vision, Values -->
+            <div class="mission-vision-values">
+                <div class="card">
+                    <h2>Our Mission</h2>
+                    <p>To empower communities by promoting health, education, and sustainable development through innovative programs and collaborative partnerships.</p>
+                </div>
+                <div class="card">
+                    <h2>Our Vision</h2>
+                    <p>To build a world where every individual has access to essential health services, quality education, and the resources for sustainable living.</p>
+                </div>
+                <div class="card">
+                    <h2>Our Values</h2>
+                    <ul>
+                        <li>Integrity</li>
+                        <li>Collaboration</li>
+                        <li>Innovation</li>
+                        <li>Sustainability</li>
+                        <li>Empowerment</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- History Section -->
+            <div class="history">
+                <h2>Our History</h2>
+                <p>CWI was founded in 2010 with a mission to address pressing community challenges. Starting with a small group of volunteers, we have grown into a leading organization providing impactful programs in health, education, and environmental sustainability. Over the years, we’ve impacted thousands of lives, collaborated with like-minded organizations, and expanded our projects to underserved regions.</p>
+            </div>
+
+            <!-- Leadership Section -->
+            <div class="leadership">
+                <h2>Our Leadership</h2>
+                <div class="team">
+                    <div class="team-member">
+                        <img src="images/winnie.jpg" alt="Team Member 1">
+                        <h3>Winnie Magezi</h3>
+                        <p>Executive Director</p>
+                        <p>With over 15 years of experience in community development, Jane leads the team at CWI, ensuring we remain focused on our mission and delivering impactful programs.</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="images/team1.JPG" alt="Team Member 2">
+                        <h3>John Mukiibi</h3>
+                        <p>Program Manager</p>
+                        <p>John oversees our health and education programs, working closely with communities and partners to deliver innovative solutions that meet their needs.</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="images/team2.JPG" alt="Team Member 3">
+                        <h3>Emmanuel Asiimwe</h3>
+                        <p>Partnerships Director</p>
+                        <p>Emily builds strategic partnerships with NGOs, government agencies, and the private sector to drive collaboration and expand our impact.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Partnerships Section -->
+            <div class="partnerships-carousel">
+                <h2>Partnerships and Collaborations</h2>
+                <p>At CWI, we believe in the power of collaboration. We are proud to partner with organizations across sectors, including:</p>
+                
+                <div class="carousel-container">
+                    <div class="carousel-slide">
+                        <div class="carousel-item">
+                            <div class="overlay"></div>
+                            <p>World Health Organization (WHO)</p>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="overlay"></div>
+                            <p>UNICEF</p>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="overlay"></div>
+                            <p>Global Education Fund</p>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="overlay"></div>
+                            <p>Local community-based organizations</p>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="overlay"></div>
+                            <p>Private sector companies committed to social responsibility</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="carousel-controls">
+                    <button class="prev">❮</button>
+                    <button class="next">❯</button>
+                </div>
+            
+                <p>Together, we create sustainable solutions that address the root causes of health, education, and environmental challenges in our communities.</p>
+            </div>                       
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Community Wellness Initiative. All Rights Reserved.</p>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="projects.html">Projects</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const carouselSlide = document.querySelector('.carousel-slide');
+        const carouselItems = document.querySelectorAll('.carousel-item');
+        const prevBtn = document.querySelector('.prev');
+        const nextBtn = document.querySelector('.next');
+    
+        let currentIndex = 0;
+        const totalItems = carouselItems.length;
+        const itemsPerScreen = getItemsPerScreen();
+    
+        // Function to update carousel position
+        function updateCarouselPosition() {
+            const slideWidth = carouselItems[0].clientWidth;
+            carouselSlide.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+        }
+    
+        // Previous Button Click
+        prevBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex - itemsPerScreen + totalItems) % totalItems;
+            updateCarouselPosition();
+        });
+    
+        // Next Button Click
+        nextBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex + itemsPerScreen) % totalItems;
+            updateCarouselPosition();
+        });
+    
+        // Auto-slide every 4 seconds
+        let autoSlide = setInterval(() => {
+            nextBtn.click();
+        }, 4000);
+    
+        // Detects how many items should be shown based on screen size
+        function getItemsPerScreen() {
+            if (window.innerWidth > 1024) {
+                return 3; // 3 items on large screens
+            } else if (window.innerWidth > 768) {
+                return 2; // 2 items on medium screens
+            } else {
+                return 1; // 1 item on small screens
+            }
+        }
+    
+        // Recalculate on resize
+        window.addEventListener('resize', () => {
+            updateCarouselPosition();
+            clearInterval(autoSlide);
+            autoSlide = setInterval(() => {
+                nextBtn.click();
+            }, 4000);
+        });
+    
+        updateCarouselPosition();
+    </script> 
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>    
+</body>
+</html>

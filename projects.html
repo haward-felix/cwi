@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Our Projects - Community Wellness Initiative (CWI)</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar Section -->
+<nav class="navbar">
+    <div class="container">
+        <div class="logo">
+            <a href="index.html"><img src="images/logo_white.png" alt="CWI Logo"></a>
+        </div>
+        <div class="nav-links-container">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="success.html">Success Stories</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="volunteer.html">Get Involved</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+    </div>
+</nav>
+    <!-- Projects Section -->
+    <section class="projects">
+        <div class="container">
+            <h1>Our Projects</h1>
+            <p>At the Community Wellness Initiative (CWI), we believe in transformative community work through sustainable projects. Below are some of the key projects we're involved in.</p>
+
+            <!-- Project 1: Amazzi Wellness Project -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/fetching_water.JPG" alt="Amazzi Wellness Project">
+                </div>
+                <div class="project-content">
+                    <h2>Amazzi Wellness Project</h2>
+                    <p><strong>Objective:</strong> Providing clean and accessible water to communities in need.</p>
+                    <p>The Amazzi Wellness Project focuses on building wells, rainwater harvesting systems, and ensuring sustainable access to clean drinking water for rural communities.</p>
+                    <p><strong>Progress:</strong> Over 30 wells have been built, providing clean water to over 10,000 individuals.</p>
+                    <a href="donate.html" class="cta-button">Donate Now</a>
+                    <a href="volunteer.html" class="cta-button">Volunteer</a>
+                </div>
+            </div>
+
+            <!-- Project 2: Financial Freedom Project -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/manure.JPG" alt="Financial Freedom Project">
+                </div>
+                <div class="project-content">
+                    <h2>Financial Freedom Project</h2>
+                    <p><strong>Objective:</strong> Empowering communities through agricultural and entrepreneurial initiatives.</p>
+                    <p>This project focuses on sustainable agriculture and small-scale farming, such as piggery, maize farming, and manure production. We provide training and financial support to help families become self-sufficient.</p>
+                    <p><strong>Progress:</strong> Over 50 families are participating in this initiative, with more joining each year.</p>
+                    <a href="donate.html" class="cta-button">Donate Now</a>
+                    <a href="volunteer.html" class="cta-button">Volunteer</a>
+                </div>
+            </div>
+
+            <!-- Project 3: Eat Green Walk Green -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/planting.JPG" alt="Eat Green Walk Green Project">
+                </div>
+                <div class="project-content">
+                    <h2>Eat Green Walk Green</h2>
+                    <p><strong>Objective:</strong> Promoting sustainable farming practices and eco-friendly lifestyles.</p>
+                    <p>This project teaches communities how to grow sustainable crops, recycle waste, and live environmentally conscious lives. The goal is to improve food security while protecting the environment.</p>
+                    <p><strong>Progress:</strong> Community gardens have been established in 10 villages, benefiting hundreds of families.</p>
+                    <a href="donate.html" class="cta-button">Donate Now</a>
+                    <a href="volunteer.html" class="cta-button">Volunteer</a>
+                </div>
+            </div>
+
+            <!-- Project 4: Lumbering & Eco-Tourism -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/mzee_male.png" alt="Lumbering & Eco-Tourism Project">
+                </div>
+                <div class="project-content">
+                    <h2>Lumbering & Eco-Tourism</h2>
+                    <p><strong>Objective:</strong> Ensuring sustainable land use while promoting eco-tourism in the region.</p>
+                    <p>This project focuses on balancing the need for natural resources with environmental conservation. By engaging in sustainable lumbering practices and promoting eco-tourism, we are able to create jobs while preserving the environment.</p>
+                    <p><strong>Progress:</strong> We've worked with local governments to protect over 1,000 hectares of forest land.</p>
+                    <a href="donate.html" class="cta-button">Donate Now</a>
+                    <a href="volunteer.html" class="cta-button">Volunteer</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Community Wellness Initiative. All Rights Reserved.</p>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="projects.html">Projects</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

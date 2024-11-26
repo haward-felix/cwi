@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate | Community Wellness Initiative</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navbar Section -->
+<nav class="navbar">
+    <div class="container">
+        <div class="logo">
+            <a href="index.html"><img src="images/logo_white.png" alt="CWI Logo"></a>
+        </div>
+        <div class="nav-links-container">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="success.html">Success Stories</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="volunteer.html">Get Involved</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+    <!-- Main Section: Donation Page -->
+    <main>
+        <section class="donate-hero">
+            <div class="hero-content">
+                <h1>Make a Difference Today</h1>
+                <p>Your contribution helps us continue our mission to improve lives and build a better future for communities.</p>
+            </div>
+        </section>
+
+        <!-- Donation Form Section -->
+        <section class="donation-form-section">
+            <div class="container">
+                <h2>Donate Now</h2>
+                <form action="process_donation.php" method="POST" class="donation-form">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="amount">Donation Amount</label>
+                        <input type="number" id="amount" name="amount" placeholder="Enter amount (USD)" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="payment-method">Payment Method</label>
+                        <select id="payment-method" name="payment_method" required>
+                            <option value="paypal">PayPal</option>
+                            <option value="credit_card">Credit Card</option>
+                            <option value="bank_transfer">Bank Transfer</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit" class="donate-submit-btn">Donate Now</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- Impact Section -->
+        <section class="donation-impact">
+            <div class="container">
+                <h2>Your Impact</h2>
+                <p>Every dollar you give helps us bring clean water, education, healthcare, and sustainable farming solutions to communities in need. Together, we can create a lasting change.</p>
+                <div class="impact-stats">
+                    <div class="stat-card">
+                        <h3>50+</h3>
+                        <p>Communities Supported</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>10,000+</h3>
+                        <p>People Benefited</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>100%</h3>
+                        <p>Transparency & Accountability</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="#">Home</a>
+                <a href="#">About Us</a>
+                <a href="#">Projects</a>
+                <a href="#">Contact Us</a>
+            </div>
+            <div class="footer-contact">
+                <p>Contact Us: info@communitywellness.org | +256 123 4567</p>
+            </div>
+            <p>&copy; 2024 Community Wellness Initiative. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Eco-Tourism Project</title>
+    <style>
+        /* General Reset */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: #028a0f;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            transition: color 0.3s;
+        }
+
+        .navbar a:hover {
+            color: #ffd700;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('https://media.giphy.com/media/RoFXqXWN639Qs/giphy.gif?cid=ecf05e472sa8jdd29dsyupzmrl8227k0cm6xrlb5x9v4494a&ep=v1_gifs_related&rid=giphy.gif&ct=g') center/cover no-repeat;
+            color: white;
+            text-align: center;
+            padding: 5rem 1rem;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-top: 1rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+        }
+
+        /* Project Details */
+        .details {
+            padding: 3rem 1rem;
+            background-color: #ffffff;
+        }
+
+        .details h2 {
+            text-align: center;
+            color: #028a0f;
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .details p {
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 1.1rem;
+            color: #555;
+            line-height: 1.8;
+        }
+
+        /* Highlights Section */
+        .highlights {
+            padding: 3rem 1rem;
+            background-color: #e8f5e9;
+        }
+
+        .highlights h2 {
+            text-align: center;
+            color: #028a0f;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .highlight-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            justify-content: center;
+        }
+
+        .highlight-card {
+            flex: 1 1 calc(33% - 1.5rem);
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            text-align: center;
+        }
+
+        .highlight-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .highlight-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .highlight-card h3 {
+            font-size: 1.5rem;
+            color: #028a0f;
+            margin: 1rem;
+        }
+
+        .highlight-card p {
+            margin: 0 1rem 1rem;
+            color: #555;
+            font-size: 1rem;
+        }
+
+        /* CTA Section */
+        .cta {
+            background-color: #028a0f;
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+        }
+
+        .cta h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .cta p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .cta .btn {
+            background-color: #ffd700;
+            color: #028a0f;
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 4px;
+            font-size: 1rem;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .cta .btn:hover {
+            background-color: white;
+            color: #028a0f;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .highlight-card {
+                flex: 1 1 100%;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="eco_tourism.html">Eco-Tourism Project</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="hero">
+        <h1>Eco-Tourism Project</h1>
+        <p>Explore the beauty of nature while preserving our environment for future generations.</p>
+    </div>
+
+    <div class="details">
+        <h2>About the Project</h2>
+        <p>
+            Our Eco-Tourism Project focuses on promoting sustainable tourism while protecting the natural environment and
+            uplifting the local community. Visitors can explore lush forests, interact with local wildlife, and learn
+            about eco-friendly practices that help conserve our planet.
+        </p>
+    </div>
+
+    <div class="highlights">
+        <h2>Key Highlights</h2>
+        <div class="highlight-grid">
+            <!-- Highlight 1 -->
+            <div class="highlight-card">
+                <img src="images/wild_life.webp" alt="Wildlife Exploration">
+                <h3>Wildlife Exploration</h3>
+                <p>Discover diverse species in their natural habitats.</p>
+            </div>
+            <!-- Highlight 2 -->
+            <div class="highlight-card">
+                <img src="images/eco_trails.jpg" alt="Eco Trails">
+                <h3>Eco Trails</h3>
+                <p>Enjoy guided tours along serene, scenic trails.</p>
+            </div>
+            <!-- Highlight 3 -->
+            <div class="highlight-card">
+                <img src="images/community.jpg" alt="Community Engagement">
+                <h3>Community Engagement</h3>
+                <p>Support local communities through eco-friendly activities.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="cta">
+        <h2>Join Our Eco-Tourism Movement</h2>
+        <p>Be a part of the change and enjoy nature responsibly.</p>
+        <a href="donate.html" class="btn">Donate Now</a>
+    </div>
+
+    <footer>
+        &copy; 2024 Community Wellness Initiative. All Rights Reserved.
+    </footer>
+</body>
+
+</html>

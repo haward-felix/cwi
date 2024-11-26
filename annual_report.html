@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Annual Report - Community Wellness Initiative (CWI)</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Inline CSS for illustration purposes */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .hero {
+            background-color: #013220; /* Dark Green */
+            color: #fff;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+        }
+
+        .report-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .report-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 400px;
+            flex: 1 1 300px;
+            transition: transform 0.3s;
+        }
+
+        .report-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .report-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: #013220;
+        }
+
+        .report-card p {
+            font-size: 1rem;
+            margin-bottom: 15px;
+        }
+
+        .report-card a {
+            text-decoration: none;
+            background-color: #013220; /* Dark Green */
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            display: inline-block;
+            transition: background-color 0.3s;
+        }
+
+        .report-card a:hover {
+            background-color: #1d5b8f; /* Dark Blue */
+        }
+
+        .financials-section {
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #eaeaea;
+        }
+
+        .financials-section h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 30px;
+            color: #013220;
+        }
+
+        .financials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .financial-card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .financial-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .financial-card h3 {
+            color: #013220;
+            margin-bottom: 15px;
+        }
+
+        .financial-card p {
+            margin-bottom: 20px;
+        }
+
+        .financial-card a {
+            background-color: #1d5b8f; /* Dark Blue */
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            display: inline-block;
+            transition: background-color 0.3s;
+        }
+
+        .financial-card a:hover {
+            background-color: #013220; /* Dark Green */
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+        }
+
+    </style>
+</head>
+<body>
+<!-- Navbar Section -->
+<nav class="navbar">
+    <div class="container">
+        <div class="logo">
+            <a href="index.html"><img src="images/logo_white.png" alt="CWI Logo"></a>
+        </div>
+        <div class="nav-links-container">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="success.html">Success Stories</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="volunteer.html">Get Involved</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+    </div>
+</nav>
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Annual Report 2024</h1>
+        <p>Discover the impact we've made in the community, our goals achieved, and financial transparency.</p>
+    </div>
+
+    <!-- Report Downloads Section -->
+    <div class="container">
+        <h2 class="section-title">Download Our Annual Reports</h2>
+        <div class="report-section">
+            <div class="report-card">
+                <h3>Annual Report 2024</h3>
+                <p>Read our comprehensive report on the initiatives and milestones we achieved in 2024.</p>
+                <a href="reports/CWI_Annual_Report_2024.pdf" download>Download PDF</a>
+            </div>
+            <div class="report-card">
+                <h3>Annual Report 2023</h3>
+                <p>Learn about our progress and how we impacted the community in 2023.</p>
+                <a href="reports/CWI_Annual_Report_2023.pdf" download>Download PDF</a>
+            </div>
+            <div class="report-card">
+                <h3>Annual Report 2022</h3>
+                <p>A look back at the success of our projects and financial standing for 2022.</p>
+                <a href="reports/CWI_Annual_Report_2022.pdf" download>Download PDF</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Financials and Achievements Section -->
+    <div class="financials-section">
+        <h2>Financials & Achievements</h2>
+        <div class="financials-grid">
+            <div class="financial-card">
+                <h3>Project Goals Achieved</h3>
+                <p>In 2024, we achieved over 90% of our project goals, impacting over 5,000 people in the region.</p>
+                <a href="projects.html">Learn More</a>
+            </div>
+            <div class="financial-card">
+                <h3>Financial Transparency</h3>
+                <p>We pride ourselves on being transparent with our financial records, ensuring all donations go towards making a real impact.</p>
+                <a href="reports/financial_statements_2024.pdf" download>Download Financial Statement</a>
+            </div>
+            <div class="financial-card">
+                <h3>Community Impact</h3>
+                <p>Through our sustainable projects, we have improved access to clean water, education, and healthcare in 15 communities.</p>
+                <a href="success.html">See Our Impact</a>
+            </div>
+        </div>
+    </div>
+<!-- Footer Section -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-links">
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Projects</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div class="footer-contact">
+            <p>Contact Us: info@communitywellness.org | +256 123 4567</p>
+        </div>
+        <p>&copy; 2024 Community Wellness Initiative. All rights reserved.</p>
+    </div>
+</footer>
+<script>
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+
+    hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
+</script>
+</body>
+</html>

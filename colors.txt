@@ -1,0 +1,3 @@
+primary color = #344e41 (dark green)
+secondary color = #003566 (blue)
+neutral color = #e29578(brown)

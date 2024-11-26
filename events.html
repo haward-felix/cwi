@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Events - Community Wellness Initiative (CWI)</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar Section -->
+<nav class="navbar">
+    <div class="container">
+        <div class="logo">
+            <a href="index.html"><img src="images/logo_white.png" alt="CWI Logo"></a>
+        </div>
+        <div class="nav-links-container">
+            <ul class="nav-links">
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="success.html">Success Stories</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="volunteer.html">Get Involved</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+    <!-- Events Section -->
+    <section class="events">
+        <div class="container">
+            <h1>Upcoming Events & Activities</h1>
+            <p>Stay updated with the latest events, fundraisers, and activities organized by the Community Wellness Initiative (CWI). Join us in making a positive impact.</p>
+
+            <!-- Calendar Section -->
+            <div class="calendar-section">
+                <h2>Event Calendar</h2>
+                <div class="calendar">
+                    <iframe src="https://calendar.google.com/calendar/embed?src=05344bff39f2a8627ce774da82c6864284a0e711b0b0772130fce155c21b0f59%40group.calendar.google.com&ctz=UTC" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>                </div>
+            </div>
+
+            <!-- Upcoming Events Section -->
+            <h2>Upcoming Events</h2>
+            <div class="event-cards">
+                <!-- Event 1 -->
+                <div class="event-card">
+                    <div class="event-date">
+                        <h3>12</h3>
+                        <p>Nov</p>
+                    </div>
+                    <div class="event-info">
+                        <h3>Fundraising Gala</h3>
+                        <p>Join us for an evening of inspiration and generosity to raise funds for the Amazzi Wellness Project.</p>
+                        <p><strong>Location:</strong> Kampala Convention Center</p>
+                        <p><strong>Time:</strong> 6:00 PM - 10:00 PM</p>
+                        <a href="#" class="btn">Register Now</a>
+                    </div>
+                </div>
+
+                <!-- Event 2 -->
+                <div class="event-card">
+                    <div class="event-date">
+                        <h3>25</h3>
+                        <p>Dec</p>
+                    </div>
+                    <div class="event-info">
+                        <h3>Christmas Charity Walk</h3>
+                        <p>Participate in our annual charity walk to raise awareness for clean water projects in rural Uganda.</p>
+                        <p><strong>Location:</strong> Entebbe Botanical Gardens</p>
+                        <p><strong>Time:</strong> 8:00 AM - 12:00 PM</p>
+                        <a href="#" class="btn">Register Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Past Events Section -->
+            <h2>Past Events & Their Impact</h2>
+            <div class="past-event-cards">
+                <!-- Past Event 1 -->
+                <div class="event-card">
+                    <div class="event-date past">
+                        <h3>14</h3>
+                        <p>Oct</p>
+                    </div>
+                    <div class="event-info">
+                        <h3>Health Awareness Campaign</h3>
+                        <p>The health awareness campaign reached over 5,000 community members, providing free health check-ups and educating them on hygiene practices.</p>
+                        <p><strong>Impact:</strong> Over 1,200 people received free health services, and hygiene practices improved across five villages.</p>
+                    </div>
+                </div>
+
+                <!-- Past Event 2 -->
+                <div class="event-card">
+                    <div class="event-date past">
+                        <h3>18</h3>
+                        <p>Sep</p>
+                    </div>
+                    <div class="event-info">
+                        <h3>Eco-Tourism Initiative Launch</h3>
+                        <p>The launch of the eco-tourism initiative saw great success with over 300 attendees, including international partners.</p>
+                        <p><strong>Impact:</strong> Created new eco-friendly job opportunities and protected 500 hectares of forest land.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Community Wellness Initiative. All Rights Reserved.</p>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="projects.html">Projects</a>
+                <a href="success.html">Success Stories</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
