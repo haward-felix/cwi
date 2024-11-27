@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Eco-Tourism Project</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <style>
         /* General Reset */
         body {
@@ -192,11 +194,30 @@
 </head>
 
 <body>
-    <div class="navbar">
-        <a href="index.html">Home</a>
-        <a href="eco_tourism.html">Eco-Tourism Project</a>
-        <a href="contact.html">Contact</a>
+    <!-- Navbar Section -->
+<nav class="navbar">
+    <div class="container">
+        <div class="logo">
+            <a href="index.html"><img src="images/logo_white.png" alt="CWI Logo"></a>
+        </div>
+        <div class="nav-links-container">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="success.html">Success Stories</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="volunteer.html">Get Involved</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
     </div>
+</nav>
 
     <div class="hero">
         <h1>Eco-Tourism Project</h1>
@@ -245,6 +266,26 @@
     <footer>
         &copy; 2024 Community Wellness Initiative. All Rights Reserved.
     </footer>
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Community Wellness Initiative. All Rights Reserved.</p>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="projects.html">Projects</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script> 
 </body>
 
 </html>
