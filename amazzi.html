@@ -235,7 +235,7 @@
                     <li class="nav-item"><a class="nav-link" href="success.html">Success Stories</a></li>
                     <li class="nav-item"><a class="nav-link" href="donate.html">Donate</a></li>
                     <li class="nav-item"><a class="nav-link" href="volunteer.html">Get Involved</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://share.hsforms.com/1GBjZ6eliRD6BtT3MzAt5qw419xu">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -322,14 +322,30 @@
         </div>
     </section>
 
-<!-- Footer -->
-<footer class="bg-dark text-white text-center py-3">
-    <p>&copy; 2024 Community Wellness Initiative. All Rights Reserved.</p>
+<!-- Footer Section -->
+<footer class="footer">
+    <div class="container">
+        <p>&copy; 2024 Community Wellness Initiative. All Rights Reserved.</p>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="about.html">About Us</a>
+            <a href="https://share.hsforms.com/1GBjZ6eliRD6BtT3MzAt5qw419xu">Contact</a>
+        </div>
+    </div>
 </footer>
 
 <!-- Bootstrap JS and dependencies -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+
+    hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
+</script>
 </body>
 </html>
