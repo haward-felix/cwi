@@ -1389,6 +1389,69 @@ body {
 .partner-form button:hover {
     background-color: #008080;
 }
+.history {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.history h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.history-item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.history-image {
+    flex: 1;
+    max-width: 40%;
+    margin: 10px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.history-image.left {
+    order: 1;
+}
+
+.history-image.right {
+    order: 2;
+}
+
+.history-item p {
+    flex: 2;
+    margin: 10px;
+    font-size: 1rem;
+}
+
+.history-item:nth-child(odd) {
+    flex-direction: row;
+}
+
+.history-item:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+@media (max-width: 768px) {
+    .history-item {
+        flex-direction: column;
+        text-align: center;
+    }
+    .history-image {
+        max-width: 100%;
+    }
+    .history-image.left, .history-image.right {
+        order: 0;
+    }
+}
 
 
 
